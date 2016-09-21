@@ -1,0 +1,72 @@
+<html>
+<head>
+<style> body {
+   
+background-image: url("2.jpg");
+background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+td.menu {background: yellow;}
+td.menu:hover {background:blue;}
+ </style>
+</head>
+
+<script type="text/javascript" >
+    function show_text1() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'Block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'Block';
+        c3_elem.style.display = 'none';
+    }
+    
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'blok';
+    }
+</script>
+<body>
+<h1 > Мексика
+</h1>
+
+<table border="1" width="100%">
+<tr>
+<td class=menu onclick= "show_text1()" > Культура </td>
+<td class=menu onclick= "show_text()"> Интересные факты </td> 
+<td class=menu onclick= "show_game()" width="30%">Викторина  </td>
+</tr>
+<tr>
+<td colspan="3">
+ <div id=c2> 
+1.Текилеро — так называется специалист по текиле.
+  
+  </div>
+  <div id=c1>
+  культура
+   </div>
+     <div id=c3>
+      
+   </div>
+</td>
+</tr>
+
+</table>
+</body>
+</html>
