@@ -72,10 +72,25 @@
         c2_elem.style.display = 'none';
         c3_elem.style.display = 'Block';
     }
- 
+    function check() {
+        q1elem=document.getElementById('q1');
+//        if (q1elem.checked) { alert("yes") } else { alert("no") };
+
+          g3e = document.getElementById("g3");
+          answer = g3e.value;
+          if (answer == "48") {
+              alert("YES");
+          } else {
+              alert("Вы уверены,что " + answer + "?")
+          }
+    }
 </script>
 <body>
-   <h1>Мексика</h1>
+<input type=text id="g3"/>dfhbfyngea
+
+<input  type=checkbox id="q1"/>dfhbfyngea
+<input type=button onclick=check() value="check"/>
+<h1>Мексика</h1>
     <table>
         <tr>
             <td class=menu onclick="show_text()" width="20%"> Главная</td>
@@ -122,4 +137,5 @@
  </tr>
  </table>
 </body>
+
 </html>
